@@ -46,7 +46,7 @@ body {
 }
 
 
-.header {
+header {
   position: fixed;
   top: 0;
   left: 0;
@@ -79,7 +79,6 @@ nav {
   display: flex;
   gap: var(--spacing-md);
   padding: var(--spacing-sm);
-
 }
 
 .nav-links a:hover {
@@ -97,6 +96,7 @@ main {
 .hero-image {
   width: 25%;
   border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-md);
 }
 
 .hero {
@@ -143,6 +143,12 @@ main {
   color: var(--color-white);
 }
 
+.btn-primary {
+  background-color: var(--color-primary);
+  padding: 10px 20px;
+  margin: var(--spacing-md) var(--spacing-md);
+}
+
 .btn:hover {
   background-color: var(--white);
   color: var(--color-accent);
@@ -167,6 +173,37 @@ footer {
 
 .footer p {
   margin: var(--spacing-xs);
+}
+
+/* contacto */
+contact-section {
+  display: block;
+  width: 100%;
+  background-color: var(--color-white);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg);
+  border: 10px solid var(--color-third);
+}
+
+.contact-intro {
+  margin: var(--spacing-md) var(--spacing-md);
+  display: block;
+  line-height: 1.8;
+}
+
+legend {
+  font-size: 1.25rem;
+  padding: var(--spacing-xs);
+  font-weight: var(--font-medium);
+  color: var(--color-secondary);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 12px;
 }
 
 .hamburger {
