@@ -9,8 +9,8 @@
       content="Pagina principal de portafolio Full Stack de Eduardo Ramos"
     />
     <title>Eduardo Ramos</title>
-    <link rel="stylesheet" href="./css/reset.css" class="rel">
-    <link rel="stylesheet" href="./css/styles.css" class="rel">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="icon"
       href="https://res.cloudinary.com/imgxivac/image/upload/v1793272735/profile-pic.jpg"
@@ -18,81 +18,74 @@
     />
   </head>
   <body>
-    <header class="header">
-      <div class="container header-content">
+    <header>
+      <nav>
+        <a href="index.html" class="logo"><strong>ER</strong></a>
 
-      <nav class="nav container">
-        <a href="/" aria-current="page" class="logo">
-        <strong>ER</strong>
-        </a>
-        
-        <ul class="nav-list">
-          <li>
-            <a href="#sobre-mi">Sobre mi</a>
-          </li>
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
-            <a href="#cheatsheets">Cheatsheets</a>
-          </li>
-          <li>
-            <a href="#recursos">Recursos</a>
-          </li>
-          <li>
-            <a href="/contacto.html">Contacto</a>
-          </li>
+        <ul class="nav-links">
+          <li><a href="#sobre-mi">Sobre mi</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#cheatsheets">Cheatsheets</a></li>
+          <li><a href="#recursos">Recursos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
 
-      </nav>
-      <button class="hamburger" id="hamburger" aria-label="Menú de navegación">
+        <button class="hamburger" aria-label="Menú de navegación">
           <span></span>
           <span></span>
           <span></span>
         </button>
-      </div>
-
+      </nav>
     </header>
 
-    <main class="main">
-      <section class="about-me container">
-        <article class="hero-content">
-      <img src="https://res.cloudinary.com/imgxivac/image/upload/v1793272735/profile-pic.jpg" class="profile-pic" alt="foto de Eduardo Ramos con gafas y barba frente a un paisaje de flores en Remoães, Portugal">
-    </section>
-      <section id="sobre-mi" class="hero container">
-        <h1>Eduardo Ramos</h1>
-          <h2>Fullstack Developer Student & QA Tester</h2>
+    <main>
+      <section class="hero" id="sobre-mi">
+        <img
+          class="hero-image"
+          src="https://res.cloudinary.com/imgxivac/image/upload/v1793272735/profile-pic.jpg"
+          alt="foto de Eduardo Ramos con gafas y barba frente a un paisaje de flores en Remoães, Portugal"
+        />
 
-      <div class="about-me hero container" >
-      <p>Con más de 13 años trabajando en el ámbito de la calidad del software, estrategias de pruebas y automatización, he decidido dar un paso más en mi aprendizaje y enfocarme en la producción de software y el <strong>desarrollo Full Stack</strong>.</p>
-      <p>Tengo experiencia en abordar problemas desde distintos ángulos y en lograr que un conjunto de pruebas ofrezca información veraz y valiosa sobre el producto, justo en el momento en que se necesita.</p>
-      <p>En esta nueva etapa, espero poder transferir mi experiencia, habilidades y destrezas para crear productos digitales de alta calidad.</p>
+        <div class="hero-text">
+          <h1>Eduardo Ramos</h1>
+          <h2>Fullstack Developer Student &amp; QA Tester</h2>
+          <p>
+            Con más de 13 años trabajando en el ámbito de la calidad del software, estrategias de pruebas y automatización, he decidido dar un paso más en mi aprendizaje y enfocarme en la producción de software y el <strong>desarrollo Full Stack</strong>.
+          </p>
+          <p>
+            Tengo experiencia en abordar problemas desde distintos ángulos y en lograr que un conjunto de pruebas ofrezca información veraz y valiosa sobre el producto, justo en el momento en que se necesita.
+          </p>
+          <p>
+            En esta nueva etapa, espero poder transferir mi experiencia, habilidades y destrezas para crear productos digitales de alta calidad.
+          </p>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="https://github.com/eduramos21/" class="btn btn-primary">GitHub</a>
+          <a href="https://www.linkedin.com/in/eduardo-ramos-anderson/" class="btn btn-primary">LinkedIn</a>
+          <a href="contacto.html" class="btn btn-primary">Contacto</a>
+        </div>
       </section>
-    </article>
 
-    <div class="hero-buttons container">
-      <a href="https://github.com/eduramos21/" class="btn">GitHub</a>
-      <a href="https://www.linkedin.com/in/eduardo-ramos-anderson/" class="btn">LinkedIn</a>
-      <a href="/contacto.html" class="btn">Contacto</a>
-    </div>
-    </div>
+      <section class="section" id="skills">
+        <h2>Skills</h2>
+      </section>
 
-    <section id="skills" class="section container">
-      <h2>Skills</h2>
-    </section>
+      <section class="section">
+        <h2>Proyectos en Progreso</h2>
+      </section>
 
-    <section class="section container">
-      <h2>Proyectos en Progreso</h2>
-    </section>
+      <section class="section" id="cheatsheets">
+        <h2>Cheatsheets</h2>
+      </section>
 
-    <section id="cheatsheets" class="section container">
-      <h2>Cheatsheets</h2>
-    </section>
-
-    <section id="recursos" class="section container">
-      <h2>Recursos</h2>
+      <section class="section" id="recursos">
+        <h2>Recursos</h2>
+      </section>
     </main>
-    <footer class="footer">
-      <p>&copy;2026 Eduardo Ramos - Fullstack Developer student & QA Tester </p>
+
+    <footer>
+      <p>&copy; 2026 Eduardo Ramos - Fullstack Developer student &amp; QA Tester</p>
     </footer>
   </body>
 </html>

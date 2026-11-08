@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Contacto</title>
     <meta charset="UTF-8" />
+    <title>Contacto</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Pagina de contacto portafolio Full Stack de Eduardo Ramos"
     />
-    <link rel="stylesheet" href="./css/reset.css" class="rel">
-    <link rel="stylesheet" href="./css/styles.css" class="rel">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="icon"
       href="https://res.cloudinary.com/imgxivac/image/upload/v1793272735/profile-pic.jpg"
@@ -18,71 +18,68 @@
     />
   </head>
   <body>
-    <header class="header">
-      <nav class="nav container">
-        <a href="/" aria-current="page" class="logo">
-          <strong>ER</strong>
-          </a>
-        
-        <ul class="nav-list">
-          <li>
-            <a href="./index.html#sobre-mi">Sobre mi</a>
-          </li>
-          <li>
-            <a href="./index.html#skills">Skills</a>
-          </li>
-          <li>
-            <a href="./index.html#cheatsheets">Cheatsheets</a>
-          </li>
-          <li>
-            <a href="./index.html#recursos">Recursos</a>
-          </li>
-          <li>
-            <a href="./index.html/contacto.html">Contacto</a>
-          </li>
+    <header>
+      <nav>
+        <a href="index.html" class="logo"><strong>ER</strong></a>
 
+        <ul class="nav-links">
+          <li><a href="index.html#sobre-mi">Sobre mi</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#cheatsheets">Cheatsheets</a></li>
+          <li><a href="index.html#recursos">Recursos</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+
+        <button class="hamburger" aria-label="Menú de navegación">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
     </header>
-    <main class="main">
-      <section class="hero">
-      <h1>Contacto</h1>
-      <p>Si tienes alguna pregunta, propuesta o solo quieres saludar, rellena el formulario y me pondré en contacto contigo lo antes posible.
-    </p>
-      <form action="#" method="POST">
-      <fieldset>
-      <legend>Contacta conmigo</legend>
-    
-      <div>
-      <label for="name">Nombre:</label>
-      <input type="text" id="name" name="name" placeholder="John Doe..." required>
-    </div>
 
-    <div>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="jane@smith.com" required>
-    </div>
+    <main>
+      <section class="contact-section">
+        <h1>Contacto</h1>
+        <p class="contact-intro">
+          Si tienes alguna pregunta, propuesta o solo quieres saludar, rellena el formulario y me pondré en contacto contigo lo antes posible.
+        </p>
 
-    <div>
-    <label for="subject">Asunto:</label>
-    <input type="text" id="subject" name="subject" placeholder="Saludos!" required>
-    </div>
+        <form action="#" method="POST">
+          <fieldset>
+            <legend>Contacta conmigo</legend>
 
-    <div>
-      <label for="message">Mensaje:</label>
-      <textarea name="message" id="message" cols="30" rows="10" placeholder="Hola, me gustaría contactar..." required></textarea>
-    </div>
+            <div class="form-group">
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" name="name" placeholder="John Doe..." required />
+            </div>
 
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="jane@smith.com" required />
+            </div>
 
-      <div>
-      <button type="submit">Enviar</button>
-      <button type="reset">Limpiar formulario</button>
-    </div>
-      </fieldset>
-      </form>
-    </section>
+            <div class="form-group">
+              <label for="subject">Asunto:</label>
+              <input type="text" id="subject" name="subject" placeholder="Saludos!" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensaje:</label>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Hola, me gustaría contactar..." required></textarea>
+            </div>
+
+            <div class="form-buttons">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+              <button type="reset" class="btn btn-primary">Limpiar formulario</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
     </main>
-    <footer class="footer">
-      <p>&copy;2026 Eduardo Ramos - Fullstack Developer student & QA Tester </p>
+
+    <footer>
+      <p>&copy; 2026 Eduardo Ramos - Fullstack Developer student &amp; QA Tester</p>
     </footer>
   </body>
 </html>
