@@ -1,22 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
-
-  --color-primary: #4a90e2;
-  --color-secondary: #006285;
-  --color-third: #7f8c8d;
-  --color-text: #333333;
-  --color-bg: #f8f9fa;
+  --color-primary: #666699; /* Platinum, el morado grisáceo de selección de Mac OS 8 */
+  --color-secondary: #333366; /* índigo oscuro, tipo barra de menú / título */
+  --color-third: #808080; /* gris medio de bordes y texto secundario */
+  --color-fourth: #cc6633; /* naranja Apple clásico, tipo icono de carpeta / alerta de System 7 */
+  --color-fifth: #0ce15b; /* verde neón, tipo fósforo de monitor CRT */
+  --color-text: #1a1a1a; /* casi negro, como el texto de System 7 */
+  --color-bg: #dddddd; /* gris Platinum de fondo de ventana */
+  --color-accent: #3399ff; /* azul vivo de enlaces y resaltados */
   --color-white: white;
-  --color-accent: #3498db;
   --font-light: 300;
   --font-regular: 400;
   --font-medium: 500;
   --font-bold: 700;
   --font-black: 900;
   --font-size-base: 1rem;
-  --font-size-md: 1.125rem ;
-  --font-size-xl: 1.25rem;; 
+  --font-size-md: 1.125rem;
+  --font-size-xl: 1.25rem;
   --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.7rem;
   --spacing-xxs: 5px;
   --spacing-xs: 8px;
   --spacing-sm: 16px;
@@ -40,7 +42,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--color-text);
   background-color: var(--color-bg);
   line-height: 1.6;
@@ -51,7 +53,6 @@ body {
   margin: 0 auto;
   padding: 0 var(--spacing-md);
 }
-
 
 header {
   position: fixed;
@@ -64,7 +65,7 @@ header {
   z-index: 1000;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,7 +98,8 @@ main {
   max-width: 1200px;
 }
 
-.hero-image {
+.hero-image,
+.about-photo {
   width: 25%;
   border-radius: var(--radius-lg);
   margin-bottom: var(--spacing-md);
@@ -112,19 +114,33 @@ main {
   line-height: 1.8;
 }
 
-.hero-text h1 {
-  font-size: var(--font-size-2xl);
+h1 {
+  font-size: var(--font-size-3xl);
   padding: var(--spacing-xs);
   font-weight: var(--font-black);
   color: var(--color-primary);
   margin-bottom: var(--spacing-sm);
 }
 
-.hero-text h2 {
-  font-size: 1.25rem;
+h2 {
+  font-size: var(--font-size-2xl);
   padding: var(--spacing-xs);
   font-weight: var(--font-medium);
   color: var(--color-secondary);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+  padding: var(--spacing-xs);
+  font-weight: var(--font-medium);
+  color: var(--color-secondary);
+}
+
+h4 {
+  font-size: var(--font-size-base);
+  padding: var(--spacing-xs);
+  font-weight: var(--font-medium);
+  color: var(--color-);
 }
 
 .hero-buttons a {
@@ -219,7 +235,8 @@ legend {
   margin-bottom: var(--spacing-md);
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
   padding: var(--spacing-sm) var(--spacing-md);
   border: 1px solid var(--color-third);
   border-radius: var(--radius-sm);
@@ -248,6 +265,40 @@ fieldset {
   background-color: var(--color-secondary);
 }
 
+/* About */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--spacing-lg) var(--spacing-md);
+  max-width: 1200px;
+  width: 100%;
+}
+
+.experience-card h3 span,
+.education-card h3 span {
+  color: var(--color-fourth);
+}
+
+.about-photo {
+  /* flex: 0 0 350px; */
+  /* padding: var(--spacing-md); */
+  /* padding-bottom: var(--spacing-md); */
+  border-radius: var(--radius-sm);
+}
+
+.about-photo img {
+  width: 100%;
+  display: block;
+}
+
+.about-bio {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--spacing-md);
+  line-height: 1.8;
+}
+
 @media (max-width: 576px) {
   .hamburger {
     display: flex;
@@ -261,10 +312,9 @@ fieldset {
     width: 100%;
     background-color: var(--color-white);
     gap: var(--spacing-xs);
-    box-shadow: var(--shadow-md); 
+    box-shadow: var(--shadow-md);
   }
 
-   
   main {
     padding: var(--spacing-lg) var(--spacing-sm);
   }
