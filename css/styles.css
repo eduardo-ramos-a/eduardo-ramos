@@ -140,7 +140,7 @@ h4 {
   font-size: var(--font-size-base);
   padding: var(--spacing-xs);
   font-weight: var(--font-medium);
-  color: var(--color-);
+  color: var(--color-secondary);
 }
 
 .hero-buttons a {
@@ -157,7 +157,7 @@ h4 {
 .btn {
   padding: 10px 20px;
   font-weight: var(--font-medium);
-  font-size: var(--fs-sm);
+  font-size: var(--font-size-base);
   border-radius: var(--radius-md);
   transition: all var(--transition-base);
   text-decoration: none;
@@ -172,7 +172,7 @@ h4 {
 }
 
 .btn:hover {
-  background-color: var(--white);
+  background-color: var(--color-white);
   color: var(--color-accent);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
@@ -180,9 +180,6 @@ h4 {
 
 .section h2 {
   font-size: 1.25rem;
-  padding: var(--spacing-xs);
-  font-weight: var(--font-medium);
-  color: var(--color-secondary);
 }
 
 footer {
@@ -210,9 +207,6 @@ footer {
 
 .contact-section h1 {
   font-size: var(--font-size-2xl);
-  padding: var(--spacing-xs);
-  font-weight: var(--font-black);
-  color: var(--color-primary);
 }
 
 .contact-intro {
@@ -280,19 +274,19 @@ fieldset {
   color: var(--color-fourth);
 }
 
-.about-photo {
-  /* flex: 0 0 350px; */
-  /* padding: var(--spacing-md); */
-  /* padding-bottom: var(--spacing-md); */
-  border-radius: var(--radius-sm);
-}
-
 .about-photo img {
   width: 100%;
   display: block;
 }
 
 .about-bio {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--spacing-md);
+  line-height: 1.8;
+}
+
+.about-photo {
   display: flex;
   flex-direction: column;
   margin-bottom: var(--spacing-md);
