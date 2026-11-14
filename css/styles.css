@@ -95,7 +95,6 @@ main {
   flex: 1;
   margin-top: var(--header-height);
   padding: var(--spacing-lg) var(--spacing-lg);
-  max-width: 1200px;
 }
 
 .hero-image,
@@ -143,17 +142,6 @@ h4 {
   color: var(--color-secondary);
 }
 
-.hero-buttons a {
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: normal;
-  background-color: var(--color-primary);
-  margin: var(--spacing-sm);
-}
-
 .btn {
   padding: 10px 20px;
   font-weight: var(--font-medium);
@@ -196,13 +184,12 @@ footer {
 
 /* contacto */
 .contact-section {
-  display: block;
   width: 100%;
-  background-color: var(--color-white);
+  color: var(--color-fifth);
+  background-color: var(--color-third);
   padding: var(--spacing-md);
   border-radius: var(--radius-lg);
   border: 10px solid var(--color-third);
-  gap: var(--spacing-xs);
 }
 
 .contact-section h1 {
@@ -211,7 +198,6 @@ footer {
 
 .contact-intro {
   margin: var(--spacing-sm);
-  display: block;
   line-height: 1.8;
 }
 
@@ -265,7 +251,14 @@ fieldset {
   flex-direction: column;
   align-items: flex-start;
   padding: var(--spacing-lg) var(--spacing-md);
-  max-width: 1200px;
+  width: 100%;
+}
+
+.about-intro-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: var(--spacing-md);
   width: 100%;
 }
 
@@ -282,15 +275,37 @@ fieldset {
 .about-bio {
   display: flex;
   flex-direction: column;
-  margin-bottom: var(--spacing-md);
+  justify-content: flex-start;
+  margin: var(--spacing-md);
   line-height: 1.8;
+  flex: 1;
 }
 
 .about-photo {
   display: flex;
   flex-direction: column;
   margin-bottom: var(--spacing-md);
-  line-height: 1.8;
+}
+
+.experience-card,
+.education-card,
+.value-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-bottom: var(--spacing-sm);
+  gap: 12px;
+}
+
+.experience-date {
+  align-self: flex-start;
+  color: var(--color-fifth);
+  font-weight: var(--font-black);
+  background-color: var(--color-primary);
+  opacity: 0.6;
+  border-radius: var(--radius-sm);
 }
 
 @media (max-width: 576px) {
@@ -311,5 +326,17 @@ fieldset {
 
   main {
     padding: var(--spacing-lg) var(--spacing-sm);
+  }
+
+  .about-intro-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--spacing-md);
+    width: 100%;
+  }
+
+  .about-photo {
+    width: 100%;
   }
 }
