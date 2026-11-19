@@ -250,6 +250,19 @@ fieldset {
   background-color: var(--color-secondary);
 }
 
+/* Animación hamburguesa activa */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(var(--spacing-xs)) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(calc(-1 * var(--spacing-xs))) rotate(-45deg);
+}
+
 /* About */
 .about-section {
   display: flex;
@@ -338,7 +351,7 @@ fieldset {
     box-shadow: var(--shadow-md);
   }
 
-  .nav-links.abierto {
+  .nav-links.active {
     right: 0;
   }
 
@@ -357,4 +370,45 @@ fieldset {
   .about-photo {
     width: 100%;
   }
+}
+
+/* Estilos dark mode */
+body.dark-mode {
+  --primary: #e0e0e0;
+  --grey-dark: #b0b0b0;
+  --grey: #888888;
+  --grey-light: #3a3a3a;
+  --white: #1e1e1e;
+  --background: #121212;
+}
+
+body.dark-mode {
+  background-color: var(--background);
+  color: var(--primary);
+}
+
+body.dark-mode header {
+  background-color: #1e1e1e;
+  border-bottom-color: #333;
+}
+
+body.dark-mode .nav-links {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .section {
+  background-color: transparent;
+}
+
+.fire-icon {
+  display: none;
+}
+
+body.dark-mode .extinguisher-icon {
+  display: none;
+}
+
+body.dark-mode .fire-icon {
+  display: inline;
+  color: var(--color-white);
 }
