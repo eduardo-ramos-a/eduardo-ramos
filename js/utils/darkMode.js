@@ -1,20 +1,14 @@
-// Modo Oscuro: Exportar la función
-// darkMode (por defecto). Debe implementar
-// la lógica de toggle para cambiar entre modo
-// claro/oscuro, añadir/quitar la clase
-// 'dark-mode' al elemento que contenga toda
-// la página.
-// Siguiente Sprint: Guardar la preferencia en
-// localStorage y cargar esta preferencia al
-// iniciar la aplicación.
 const darkMode = () => {
   const btnDarkMode = document.querySelector("#darkModeToggle");
   const body = document.body;
 
+  if (localStorage.getItem("theme") === "dark") body.classList.add("dark-mode");
+
   //Activar modo oscuro
-  btnDarkMode.addEventListener("click", () =>
-    body.classList.toggle("dark-mode"),
-  );
+  btnDarkMode.addEventListener("click", () => {
+    const isDark = body.classList.toggle("dark-mode");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  });
 };
 
 export default darkMode;
