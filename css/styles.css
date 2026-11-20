@@ -7,6 +7,7 @@
   --color-fifth: #0ce15b; /* verde neón, tipo fósforo de monitor CRT */
   --color-text: #1a1a1a; /* casi negro, como el texto de System 7 */
   --color-bg: #dddddd; /* gris Platinum de fondo de ventana */
+  --color-bg-2: #cccccc; /* tono mas oscuro que el Platinum
   --color-accent: #3399ff; /* azul vivo de enlaces y resaltados */
   --color-white: #f5f5f5;
   --font-light: 300;
@@ -261,6 +262,72 @@ fieldset {
 
 .hamburger.active span:nth-child(3) {
   transform: translateY(calc(-1 * var(--spacing-xs))) rotate(-45deg);
+}
+
+#skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg) 0;
+}
+
+.skill-card {
+  flex: 1 1 calc(25% - var(--spacing-md));
+  min-width: 220px;
+  background-color: #cccccc;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--color-accent);
+}
+
+.skill-icon {
+  margin-bottom: var(--spacing-sm);
+}
+
+.skill-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.skill-card h3 {
+  font-size: var(--fs-lg);
+  font-weight: var(--font-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.skill-level {
+  font-size: var(--font-size-base);
+  color: var(--color-accent);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--spacing-xs);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.skill-description {
+  font-size: var(--font-size-base);
+  color: var(--color-secondary);
+  line-height: 1.5;
+  margin-bottom: var(--spacing-sm);
+}
+
+.skill-tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.skill-tags .tag {
+  font-size: var(--font-size-base);
+  background-color: var(--color-fifth);
+  opacity: 0.7;
+  color: var(--color-secondary);
+  font-weight: var(--font-bold);
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-medium);
 }
 
 /* About */

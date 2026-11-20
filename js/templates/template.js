@@ -1,10 +1,3 @@
-// Módulos Reutilizables: Exportar constantes
-// header y footer como template strings. El
-// header debe incluir el Logo, el menú de
-// navegación (nav-links), el botón de modo
-// oscuro (con iconos sol/luna), y el botón
-// hamburguesa.
-
 // Header
 const header = `
 <header>
