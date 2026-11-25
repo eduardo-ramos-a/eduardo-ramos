@@ -20,6 +20,7 @@
   --font-size-xl: 1.25rem;
   --font-size-2xl: 1.5rem;
   --font-size-3xl: 1.7rem;
+  --spacing-min: 2px;
   --spacing-xxs: 5px;
   --spacing-xs: 8px;
   --spacing-sm: 16px;
@@ -124,7 +125,7 @@ h1 {
 
 h2 {
   font-size: var(--font-size-2xl);
-  padding: var(--spacing-xs);
+  padding: var(--spacing-min) var(--spacing-xs);
   font-weight: var(--font-medium);
   color: var(--color-secondary);
 }
@@ -264,14 +265,16 @@ fieldset {
   transform: translateY(calc(-1 * var(--spacing-xs))) rotate(-45deg);
 }
 
-#skills-container {
+#skills-container,
+#cheatsheets-container {
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-md);
-  padding: var(--spacing-lg) 0;
+  padding: var(--spacing-xs) 0;
 }
 
-.skill-card {
+.skill-card,
+.cheatsheet-card {
   flex: 1 1 calc(25% - var(--spacing-md));
   min-width: 220px;
   background-color: #cccccc;
@@ -280,7 +283,8 @@ fieldset {
   border-left: 4px solid var(--color-accent);
 }
 
-.skill-icon {
+.skill-icon,
+.cheatsheet-icon {
   margin-bottom: var(--spacing-sm);
 }
 
@@ -289,7 +293,8 @@ fieldset {
   height: 40px;
 }
 
-.skill-card h3 {
+.skill-card,
+.cheatsheet-card h3 {
   font-size: var(--fs-lg);
   font-weight: var(--font-bold);
   color: var(--color-primary);
@@ -305,7 +310,8 @@ fieldset {
   letter-spacing: 1px;
 }
 
-.skill-description {
+.skill-description,
+.cheatsheet-description {
   font-size: var(--font-size-base);
   color: var(--color-secondary);
   line-height: 1.5;
