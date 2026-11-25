@@ -402,6 +402,11 @@ fieldset {
   border-radius: var(--radius-sm);
 }
 
+.experience-card li,
+.education-card li {
+  list-style-type: square;
+}
+
 @media (max-width: 576px) {
   .hamburger {
     display: flex;
